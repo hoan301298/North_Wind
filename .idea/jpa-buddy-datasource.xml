@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpbDataSourceConfig">
+    <data-sources>
+      <data-source id="a5b5ed6f-f0b1-4e50-9287-9dabbca113fc" name="e2000575_northwind" url="jdbc:mariadb://mariadb.vamk.fi/e2000575_northwind" driverClass="org.mariadb.jdbc.Driver" />
+    </data-sources>
+  </component>
+</project>

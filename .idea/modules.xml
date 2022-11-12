@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/North_Wind.iml" filepath="$PROJECT_DIR$/.idea/North_Wind.iml" />
+      <module fileurl="file://$PROJECT_DIR$/north-wind/north-wind.iml" filepath="$PROJECT_DIR$/north-wind/north-wind.iml" />
+    </modules>
+  </component>
+</project>
