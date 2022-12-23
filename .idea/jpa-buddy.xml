@@ -3,5 +3,14 @@
   <component name="JpaBuddyIdeaProjectConfig">
     <option name="defaultUnitInitialized" value="true" />
     <option name="renamerInitialized" value="true" />
+    <option name="reverseEngineeringLastDbConnectionId" value="a5b5ed6f-f0b1-4e50-9287-9dabbca113fc" />
+    <option name="reLastEntityCreationPackage" value="north-wind/src/main/java/fi/vamk/e2000575/northwind/entity" />
+    <reUseDbSnapshotConnections>
+      <dbConnection id="a5b5ed6f-f0b1-4e50-9287-9dabbca113fc" />
+    </reUseDbSnapshotConnections>
+    <option name="newEntityIdStrategy" />
+    <option name="reIgnoreSlowDbConnections">
+      <ignoreDs id="a5b5ed6f-f0b1-4e50-9287-9dabbca113fc" />
+    </option>
   </component>
 </project>

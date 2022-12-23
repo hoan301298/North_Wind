@@ -50,11 +50,16 @@
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-ui</artifactId>
-			<version>1.6.9</version>
+			<version>1.6.12</version>
 		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.boot</groupId>-->
+<!--			<artifactId>spring-boot-starter-security</artifactId>-->
+<!--		</dependency>-->
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
+			<groupId>com.github.ulisesbocchio</groupId>
+			<artifactId>jasypt-spring-boot</artifactId>
+			<version>3.0.4</version>
 		</dependency>
 	</dependencies>
 
