@@ -12,67 +12,67 @@ public class Supplier {
 
     @Size(max = 50)
     @Column(name = "company", length = 50)
-    private java.lang.String company;
+    private String company;
 
     @Size(max = 50)
     @Column(name = "last_name", length = 50)
-    private java.lang.String lastName;
+    private String lastName;
 
     @Size(max = 50)
     @Column(name = "first_name", length = 50)
-    private java.lang.String firstName;
+    private String firstName;
 
     @Size(max = 50)
     @Column(name = "email_address", length = 50)
-    private java.lang.String emailAddress;
+    private String emailAddress;
 
     @Size(max = 50)
     @Column(name = "job_title", length = 50)
-    private java.lang.String jobTitle;
+    private String jobTitle;
 
     @Size(max = 25)
     @Column(name = "business_phone", length = 25)
-    private java.lang.String businessPhone;
+    private String businessPhone;
 
     @Size(max = 25)
     @Column(name = "home_phone", length = 25)
-    private java.lang.String homePhone;
+    private String homePhone;
 
     @Size(max = 25)
     @Column(name = "mobile_phone", length = 25)
-    private java.lang.String mobilePhone;
+    private String mobilePhone;
 
     @Size(max = 25)
     @Column(name = "fax_number", length = 25)
-    private java.lang.String faxNumber;
+    private String faxNumber;
 
     @Lob
     @Column(name = "address")
-    private java.lang.String address;
+    private String address;
 
     @Size(max = 50)
     @Column(name = "city", length = 50)
-    private java.lang.String city;
+    private String city;
 
     @Size(max = 50)
     @Column(name = "state_province", length = 50)
-    private java.lang.String stateProvince;
+    private String stateProvince;
 
     @Size(max = 15)
     @Column(name = "zip_postal_code", length = 15)
-    private java.lang.String zipPostalCode;
+    private String zipPostalCode;
 
     @Size(max = 50)
     @Column(name = "country_region", length = 50)
-    private java.lang.String countryRegion;
+    private String countryRegion;
 
     @Lob
     @Column(name = "web_page")
-    private java.lang.String webPage;
+    private String webPage;
 
     @Lob
     @Column(name = "notes")
-    private java.lang.String notes;
+    private String notes;
 
     @Column(name = "attachments")
     private byte[] attachments;
@@ -85,131 +85,131 @@ public class Supplier {
         this.id = id;
     }
 
-    public java.lang.String getCompany() {
+    public String getCompany() {
         return company;
     }
 
-    public void setCompany(java.lang.String company) {
+    public void setCompany(String company) {
         this.company = company;
     }
 
-    public java.lang.String getLastName() {
+    public String getLastName() {
         return lastName;
     }
 
-    public void setLastName(java.lang.String lastName) {
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    public java.lang.String getFirstName() {
+    public String getFirstName() {
         return firstName;
     }
 
-    public void setFirstName(java.lang.String firstName) {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
-    public java.lang.String getEmailAddress() {
+    public String getEmailAddress() {
         return emailAddress;
     }
 
-    public void setEmailAddress(java.lang.String emailAddress) {
+    public void setEmailAddress(String emailAddress) {
         this.emailAddress = emailAddress;
     }
 
-    public java.lang.String getJobTitle() {
+    public String getJobTitle() {
         return jobTitle;
     }
 
-    public void setJobTitle(java.lang.String jobTitle) {
+    public void setJobTitle(String jobTitle) {
         this.jobTitle = jobTitle;
     }
 
-    public java.lang.String getBusinessPhone() {
+    public String getBusinessPhone() {
         return businessPhone;
     }
 
-    public void setBusinessPhone(java.lang.String businessPhone) {
+    public void setBusinessPhone(String businessPhone) {
         this.businessPhone = businessPhone;
     }
 
-    public java.lang.String getHomePhone() {
+    public String getHomePhone() {
         return homePhone;
     }
 
-    public void setHomePhone(java.lang.String homePhone) {
+    public void setHomePhone(String homePhone) {
         this.homePhone = homePhone;
     }
 
-    public java.lang.String getMobilePhone() {
+    public String getMobilePhone() {
         return mobilePhone;
     }
 
-    public void setMobilePhone(java.lang.String mobilePhone) {
+    public void setMobilePhone(String mobilePhone) {
         this.mobilePhone = mobilePhone;
     }
 
-    public java.lang.String getFaxNumber() {
+    public String getFaxNumber() {
         return faxNumber;
     }
 
-    public void setFaxNumber(java.lang.String faxNumber) {
+    public void setFaxNumber(String faxNumber) {
         this.faxNumber = faxNumber;
     }
 
-    public java.lang.String getAddress() {
+    public String getAddress() {
         return address;
     }
 
-    public void setAddress(java.lang.String address) {
+    public void setAddress(String address) {
         this.address = address;
     }
 
-    public java.lang.String getCity() {
+    public String getCity() {
         return city;
     }
 
-    public void setCity(java.lang.String city) {
+    public void setCity(String city) {
         this.city = city;
     }
 
-    public java.lang.String getStateProvince() {
+    public String getStateProvince() {
         return stateProvince;
     }
 
-    public void setStateProvince(java.lang.String stateProvince) {
+    public void setStateProvince(String stateProvince) {
         this.stateProvince = stateProvince;
     }
 
-    public java.lang.String getZipPostalCode() {
+    public String getZipPostalCode() {
         return zipPostalCode;
     }
 
-    public void setZipPostalCode(java.lang.String zipPostalCode) {
+    public void setZipPostalCode(String zipPostalCode) {
         this.zipPostalCode = zipPostalCode;
     }
 
-    public java.lang.String getCountryRegion() {
+    public String getCountryRegion() {
         return countryRegion;
     }
 
-    public void setCountryRegion(java.lang.String countryRegion) {
+    public void setCountryRegion(String countryRegion) {
         this.countryRegion = countryRegion;
     }
 
-    public java.lang.String getWebPage() {
+    public String getWebPage() {
         return webPage;
     }
 
-    public void setWebPage(java.lang.String webPage) {
+    public void setWebPage(String webPage) {
         this.webPage = webPage;
     }
 
-    public java.lang.String getNotes() {
+    public String getNotes() {
         return notes;
     }
 
-    public void setNotes(java.lang.String notes) {
+    public void setNotes(String notes) {
         this.notes = notes;
     }
 

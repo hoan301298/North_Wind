@@ -23,11 +23,11 @@ public class Strings {
         this.id = id;
     }
 
-    public java.lang.String getStringData() {
+    public String getStringData() {
         return stringData;
     }
 
-    public void setStringData(java.lang.String stringData) {
+    public void setStringData(String stringData) {
         this.stringData = stringData;
     }
 

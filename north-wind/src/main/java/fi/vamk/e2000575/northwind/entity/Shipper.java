@@ -12,67 +12,67 @@ public class Shipper {
 
     @Size(max = 50)
     @Column(name = "company", length = 50)
-    private Strings company;
+    private String company;
 
     @Size(max = 50)
     @Column(name = "last_name", length = 50)
-    private Strings lastName;
+    private String lastName;
 
     @Size(max = 50)
     @Column(name = "first_name", length = 50)
-    private Strings firstName;
+    private String firstName;
 
     @Size(max = 50)
     @Column(name = "email_address", length = 50)
-    private Strings emailAddress;
+    private String emailAddress;
 
     @Size(max = 50)
     @Column(name = "job_title", length = 50)
-    private Strings jobTitle;
+    private String jobTitle;
 
     @Size(max = 25)
     @Column(name = "business_phone", length = 25)
-    private Strings businessPhone;
+    private String businessPhone;
 
     @Size(max = 25)
     @Column(name = "home_phone", length = 25)
-    private Strings homePhone;
+    private String homePhone;
 
     @Size(max = 25)
     @Column(name = "mobile_phone", length = 25)
-    private Strings mobilePhone;
+    private String mobilePhone;
 
     @Size(max = 25)
     @Column(name = "fax_number", length = 25)
-    private Strings faxNumber;
+    private String faxNumber;
 
     @Lob
     @Column(name = "address")
-    private Strings address;
+    private String address;
 
     @Size(max = 50)
     @Column(name = "city", length = 50)
-    private Strings city;
+    private String city;
 
     @Size(max = 50)
     @Column(name = "state_province", length = 50)
-    private Strings stateProvince;
+    private String stateProvince;
 
     @Size(max = 15)
     @Column(name = "zip_postal_code", length = 15)
-    private Strings zipPostalCode;
+    private String zipPostalCode;
 
     @Size(max = 50)
     @Column(name = "country_region", length = 50)
-    private Strings countryRegion;
+    private String countryRegion;
 
     @Lob
     @Column(name = "web_page")
-    private Strings webPage;
+    private String webPage;
 
     @Lob
     @Column(name = "notes")
-    private Strings notes;
+    private String notes;
 
     @Column(name = "attachments")
     private byte[] attachments;
@@ -85,131 +85,131 @@ public class Shipper {
         this.id = id;
     }
 
-    public Strings getCompany() {
+    public String getCompany() {
         return company;
     }
 
-    public void setCompany(Strings company) {
+    public void setCompany(String company) {
         this.company = company;
     }
 
-    public Strings getLastName() {
+    public String getLastName() {
         return lastName;
     }
 
-    public void setLastName(Strings lastName) {
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    public Strings getFirstName() {
+    public String getFirstName() {
         return firstName;
     }
 
-    public void setFirstName(Strings firstName) {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
-    public Strings getEmailAddress() {
+    public String getEmailAddress() {
         return emailAddress;
     }
 
-    public void setEmailAddress(Strings emailAddress) {
+    public void setEmailAddress(String emailAddress) {
         this.emailAddress = emailAddress;
     }
 
-    public Strings getJobTitle() {
+    public String getJobTitle() {
         return jobTitle;
     }
 
-    public void setJobTitle(Strings jobTitle) {
+    public void setJobTitle(String jobTitle) {
         this.jobTitle = jobTitle;
     }
 
-    public Strings getBusinessPhone() {
+    public String getBusinessPhone() {
         return businessPhone;
     }
 
-    public void setBusinessPhone(Strings businessPhone) {
+    public void setBusinessPhone(String businessPhone) {
         this.businessPhone = businessPhone;
     }
 
-    public Strings getHomePhone() {
+    public String getHomePhone() {
         return homePhone;
     }
 
-    public void setHomePhone(Strings homePhone) {
+    public void setHomePhone(String homePhone) {
         this.homePhone = homePhone;
     }
 
-    public Strings getMobilePhone() {
+    public String getMobilePhone() {
         return mobilePhone;
     }
 
-    public void setMobilePhone(Strings mobilePhone) {
+    public void setMobilePhone(String mobilePhone) {
         this.mobilePhone = mobilePhone;
     }
 
-    public Strings getFaxNumber() {
+    public String getFaxNumber() {
         return faxNumber;
     }
 
-    public void setFaxNumber(Strings faxNumber) {
+    public void setFaxNumber(String faxNumber) {
         this.faxNumber = faxNumber;
     }
 
-    public Strings getAddress() {
+    public String getAddress() {
         return address;
     }
 
-    public void setAddress(Strings address) {
+    public void setAddress(String address) {
         this.address = address;
     }
 
-    public Strings getCity() {
+    public String getCity() {
         return city;
     }
 
-    public void setCity(Strings city) {
+    public void setCity(String city) {
         this.city = city;
     }
 
-    public Strings getStateProvince() {
+    public String getStateProvince() {
         return stateProvince;
     }
 
-    public void setStateProvince(Strings stateProvince) {
+    public void setStateProvince(String stateProvince) {
         this.stateProvince = stateProvince;
     }
 
-    public Strings getZipPostalCode() {
+    public String getZipPostalCode() {
         return zipPostalCode;
     }
 
-    public void setZipPostalCode(Strings zipPostalCode) {
+    public void setZipPostalCode(String zipPostalCode) {
         this.zipPostalCode = zipPostalCode;
     }
 
-    public Strings getCountryRegion() {
+    public String getCountryRegion() {
         return countryRegion;
     }
 
-    public void setCountryRegion(Strings countryRegion) {
+    public void setCountryRegion(String countryRegion) {
         this.countryRegion = countryRegion;
     }
 
-    public Strings getWebPage() {
+    public String getWebPage() {
         return webPage;
     }
 
-    public void setWebPage(Strings webPage) {
+    public void setWebPage(String webPage) {
         this.webPage = webPage;
     }
 
-    public Strings getNotes() {
+    public String getNotes() {
         return notes;
     }
 
-    public void setNotes(Strings notes) {
+    public void setNotes(String notes) {
         this.notes = notes;
     }
 
