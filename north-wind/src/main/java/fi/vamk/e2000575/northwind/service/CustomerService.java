@@ -17,18 +17,16 @@ public class CustomerService {
     private CustomerRepository customerRepository;
 
     public List<Customer> getCustomer() {
-        List<Customer> customer = customerRepository.findAll();
-        return customer;
+        return customerRepository.findAll();
     }
     public Optional<Customer> getCustomerById(int id) {
-        Optional<Customer> customer = customerRepository.findById(id);
-        return customer;
+        return customerRepository.findById(id);
     }
 
     public List<Customer> searchCustomer(String company){
         List<Customer> result = new ArrayList<>();
         for(Customer customers : getCustomer()) {
-            if(customers.getCompany().contains(company))
+            if(customers.getCompany().equals(company))
                 result.add(customers);
         }
         return result;

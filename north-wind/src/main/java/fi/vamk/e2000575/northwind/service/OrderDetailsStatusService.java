@@ -4,11 +4,12 @@ import fi.vamk.e2000575.northwind.entity.OrderDetailsStatus;
 import fi.vamk.e2000575.northwind.repository.OrderDetailsStatusRepository;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class OrderDetailsStatusService {
     @Autowired
     private OrderDetailsStatusRepository OrderDetailsStatusRepository;

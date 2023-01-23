@@ -4,10 +4,11 @@ import fi.vamk.e2000575.northwind.entity.SalesReport;
 import fi.vamk.e2000575.northwind.repository.SalesReportRepository;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Service
 public class SalesReportService {
     @Autowired
     private SalesReportRepository SalesReportRepository;

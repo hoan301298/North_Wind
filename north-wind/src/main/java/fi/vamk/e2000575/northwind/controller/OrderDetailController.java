@@ -1,6 +1,5 @@
 package fi.vamk.e2000575.northwind.controller;
 
-import fi.vamk.e2000575.northwind.entity.Order;
 import fi.vamk.e2000575.northwind.entity.OrderDetail;
 import fi.vamk.e2000575.northwind.service.OrderDetailService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,8 +29,8 @@ public class OrderDetailController {
     }
 
     @GetMapping("/search")
-    public ResponseEntity<?> searchOrderDetail(@RequestParam(name = "keyword") Order order) {
-        List<OrderDetail> OrderDetail = OrderDetailService.searchOrderDetail(order);
+    public ResponseEntity<?> searchOrderDetail(@RequestParam(name = "keyword") @PathVariable int id) {
+        List<OrderDetail> OrderDetail = OrderDetailService.searchOrderDetailByOrderId(id);
         return ResponseEntity.ok(OrderDetail);
     }
     @PostMapping

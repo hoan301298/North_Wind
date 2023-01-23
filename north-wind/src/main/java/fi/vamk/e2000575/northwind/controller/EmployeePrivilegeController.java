@@ -20,14 +20,8 @@ public class EmployeePrivilegeController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<?> getEmployeeById(@RequestParam(name = "Employee") @PathVariable int id) {
-        EmployeePrivilege EmployeePrivilege = EmployeePrivilegeService.getEmployeeById(id);
-        return ResponseEntity.ok(EmployeePrivilege);
-    }
-
-    @GetMapping("/{id}")
-    public ResponseEntity<?> getPrivilegeById(@RequestParam(name = "Privilege") @PathVariable int id) {
-        EmployeePrivilege EmployeePrivilege = EmployeePrivilegeService.getPrivilegeById(id);
+    public ResponseEntity<?> getEmployeeById(@RequestParam(name = "EmployeePrivilege") @PathVariable int id) {
+        EmployeePrivilege EmployeePrivilege = EmployeePrivilegeService.getEmployeePrivilegeById(id);
         return ResponseEntity.ok(EmployeePrivilege);
     }
 

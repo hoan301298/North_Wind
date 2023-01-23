@@ -1,20 +1,19 @@
 package fi.vamk.e2000575.northwind.service;
 
-import fi.vamk.e2000575.northwind.entity.Order;
 import fi.vamk.e2000575.northwind.entity.OrderDetail;
 import fi.vamk.e2000575.northwind.repository.OrderDetailRepository;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class OrderDetailService {
     @Autowired
     private OrderDetailRepository OrderDetailRepository;
-    @Autowired
-    private Order Order;
+
 
     public List<OrderDetail> getOrderDetail() {
         return OrderDetailRepository.findAll();
@@ -23,10 +22,10 @@ public class OrderDetailService {
         return OrderDetailRepository.findById(id);
     }
 
-    public List<OrderDetail> searchOrderDetail(Order order){
+    public List<OrderDetail> searchOrderDetailByOrderId(int id){
         List<OrderDetail> result = new ArrayList<>();
         for(OrderDetail OrderDetails : getOrderDetail()) {
-            if(OrderDetails.getOrder().equals(order))
+            if(OrderDetails.getOrder().getId().equals(id))
                 result.add(OrderDetails);
         }
         return result;

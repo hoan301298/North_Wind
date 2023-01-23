@@ -1,7 +1,6 @@
 package fi.vamk.e2000575.northwind.controller;
 
 import fi.vamk.e2000575.northwind.entity.Invoice;
-import fi.vamk.e2000575.northwind.entity.Order;
 import fi.vamk.e2000575.northwind.service.InvoiceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -30,8 +29,8 @@ public class InvoiceController {
     }
 
     @GetMapping("/search")
-    public ResponseEntity<?> searchInvoice(@RequestParam(name = "keyword") Order order) {
-        List<Invoice> Invoice = InvoiceService.searchInvoice(order);
+    public ResponseEntity<?> searchInvoice(@RequestParam(name = "keyword") @PathVariable int id) {
+        List<Invoice> Invoice = InvoiceService.searchInvoiceByOrderId(id);
         return ResponseEntity.ok(Invoice);
     }
     @PostMapping

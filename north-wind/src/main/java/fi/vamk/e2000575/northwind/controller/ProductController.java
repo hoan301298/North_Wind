@@ -28,13 +28,13 @@ public class ProductController {
         return ResponseEntity.ok(Product);
     }
 
-    @GetMapping("/search")
+    @GetMapping("/search/{ProductCode}")
     public ResponseEntity<?> searchProductByCode(@RequestParam(name = "ProductCode") String productCode) {
         List<Product> Product = ProductService.searchProductByCode(productCode);
         return ResponseEntity.ok(Product);
     }
 
-    @GetMapping("/search")
+    @GetMapping("/search/{ProductName}")
     public ResponseEntity<?> searchProductByName(@RequestParam(name = "ProductName") String productName) {
         List<Product> Product = ProductService.searchProductByName(productName);
         return ResponseEntity.ok(Product);

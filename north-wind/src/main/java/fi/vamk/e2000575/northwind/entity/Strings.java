@@ -13,7 +13,7 @@ public class Strings {
 
     @Size(max = 255)
     @Column(name = "string_data")
-    private java.lang.String stringData;
+    private String stringData;
 
     public Integer getId() {
         return id;

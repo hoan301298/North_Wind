@@ -5,11 +5,12 @@ import fi.vamk.e2000575.northwind.entity.Supplier;
 import fi.vamk.e2000575.northwind.repository.PurchaseOrderRepository;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class PurchaseOrderService {
     @Autowired
     private PurchaseOrderRepository PurchaseOrderRepository;

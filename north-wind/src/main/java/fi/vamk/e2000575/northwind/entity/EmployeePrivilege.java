@@ -1,33 +1,32 @@
 package fi.vamk.e2000575.northwind.entity;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
 import javax.persistence.*;
-@Getter
-@Setter
+import javax.validation.constraints.NotNull;
+
 @Entity
 @Table(name = "employee_privileges")
-@NoArgsConstructor
 public class EmployeePrivilege {
-
     @Id
-    @Column(name = "employee_id", nullable = false)
-    private Integer employeeId;
+    @Column(name = "id", nullable = false)
+    private Integer id;
 
-    @Id
-    @Column(name = "privilege_id", nullable = false)
-    private Integer privilegeId;
-    @MapsId("employeeId")
+    @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "employee_id", nullable = false)
     private Employee employee;
 
-    @MapsId("privilegeId")
+    @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "privilege_id", nullable = false)
     private Privilege privilege;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public Employee getEmployee() {
         return employee;

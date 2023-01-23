@@ -29,7 +29,7 @@ public class CustomerController {
     }
 
     @GetMapping("/search")
-    public ResponseEntity<?> searchCustomer(@RequestParam(name = "keyword") String company) {
+    public ResponseEntity<?> searchCustomer(@RequestParam(name = "company") String company) {
         List<Customer> customer = customerService.searchCustomer(company);
         return ResponseEntity.ok(customer);
     }

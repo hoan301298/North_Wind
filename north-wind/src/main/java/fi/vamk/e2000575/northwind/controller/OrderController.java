@@ -1,7 +1,5 @@
 package fi.vamk.e2000575.northwind.controller;
 
-import fi.vamk.e2000575.northwind.entity.Customer;
-import fi.vamk.e2000575.northwind.entity.Employee;
 import fi.vamk.e2000575.northwind.entity.Order;
 import fi.vamk.e2000575.northwind.repository.CustomerRepository;
 import fi.vamk.e2000575.northwind.service.OrderService;
@@ -33,14 +31,14 @@ public class OrderController {
         return ResponseEntity.ok(Order);
     }
 
-    @GetMapping("/search")
-    public ResponseEntity<?> searchOrderEmployeeId(@RequestParam(name = "Employee") Employee employee) {
-        List<Order> Order = OrderService.searchOrderByEmployeeID(employee);
+    @GetMapping("/search/employee/{id}")
+    public ResponseEntity<?> searchOrderByEmployeeId(@RequestParam(name = "Employee") @PathVariable int id) {
+        List<Order> Order = OrderService.searchOrderByEmployeeID(id);
         return ResponseEntity.ok(Order);
     }
-    @GetMapping("/search")
-    public ResponseEntity<?> searchOrderCustomerId(@RequestParam(name = "Customer") Customer customer) {
-        List<Order> Order = OrderService.searchOrderByCustomerID(customer);
+    @GetMapping("/search/customer/{id}")
+    public ResponseEntity<?> searchOrderByCustomerId(@RequestParam(name = "Customer") @PathVariable int id) {
+        List<Order> Order = OrderService.searchOrderByCustomerID(id);
         return ResponseEntity.ok(Order);
     }
     @PostMapping

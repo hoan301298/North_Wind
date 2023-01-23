@@ -28,7 +28,7 @@ public class EmployeeController {
     }
 
     @GetMapping("/search")
-    public ResponseEntity<?> searchEmployee(@RequestParam(name = "keyword") String company) {
+    public ResponseEntity<?> searchEmployee(@RequestParam("company") String company) {
         List<Employee> Employee = EmployeeService.searchEmployee(company);
         return ResponseEntity.ok(Employee);
     }

@@ -1,20 +1,21 @@
 package fi.vamk.e2000575.northwind.service;
 
 import fi.vamk.e2000575.northwind.entity.Invoice;
-import fi.vamk.e2000575.northwind.entity.Order;
 import fi.vamk.e2000575.northwind.repository.InvoiceRepository;
+import fi.vamk.e2000575.northwind.repository.OrderRepository;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class InvoiceService {
     @Autowired
     private InvoiceRepository InvoiceRepository;
     @Autowired
-    private Order Order;
+    private OrderRepository OrderRepository;
 
     public List<Invoice> getInvoice() {
         List<Invoice> Invoice = InvoiceRepository.findAll();
@@ -25,10 +26,10 @@ public class InvoiceService {
         return Invoice;
     }
 
-    public List<Invoice> searchInvoice(Order order){
+    public List<Invoice> searchInvoiceByOrderId(int id){
         List<Invoice> result = new ArrayList<>();
         for(Invoice Invoices : getInvoice()) {
-            if(Invoices.getOrder().equals(order))
+            if(Invoices.getOrder().getId().equals(id))
                 result.add(Invoices);
         }
         return result;
